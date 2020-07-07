@@ -1,0 +1,34 @@
+{
+  "schemaVersion": 1,
+  "id": "flesh2leather",
+  "version": "${version}",
+
+  "name": "Flesh 2 Leather",
+  "description": "This mod adds a convenient way to turn your excessive amounts of useless flesh into leather!",
+  "authors": [
+    "CodenameRevy"
+  ],
+  "contact": {
+    "homepage": "https://fabricmc.net/",
+    "sources": "https://github.com/FabricMC/fabric-example-mod"
+  },
+
+  "license": "GNU-GPLv3",
+  "icon": "assets/flesh2leather/flesh2leather.png",
+
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "com.codenamerevy.flesh2leather.Flesh2Leather"
+    ]
+  },
+
+  "depends": {
+    "fabricloader": ">=0.7.4",
+    "fabric": "*",
+    "minecraft": "1.16.x"
+  },
+  "suggests": {
+    "flamingo": "*"
+  }
+}
