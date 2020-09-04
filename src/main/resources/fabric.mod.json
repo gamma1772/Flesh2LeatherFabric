@@ -6,11 +6,12 @@
   "name": "Flesh2Leather",
   "description": "This mod adds a convenient way to turn your excessive amounts of useless flesh into leather!",
   "authors": [
-    "CodenameRevy"
+    "CodenameRevy",
+    "lechiny (zh_cn translations)"
   ],
   "contact": {
-    "homepage": "https://fabricmc.net/",
-    "sources": "https://github.com/FabricMC/fabric-example-mod"
+    "homepage": "https://github.com/CodenameRevy",
+    "sources": "https://github.com/CodenameRevy/flesh2leather-fabric"
   },
 
   "license": "MIT",
