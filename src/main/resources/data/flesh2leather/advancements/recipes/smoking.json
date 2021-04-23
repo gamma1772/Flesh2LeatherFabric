@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+      "flesh2leather:smoking"
+    ]
+  },
+  "criteria": {
+    "has_combined_flesh": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "flesh2leather:combined_flesh"
+          }
+        ]
+      }
+    },
+    "has_the_recipe": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "flesh2leather:smoking"
+      }
+    }
+  },
+  "requirements": [
+    [
+      "has_combined_flesh",
+      "has_the_recipe"
+    ]
+  ]
+}
