@@ -14,7 +14,7 @@
     "sources": "https://github.com/CodenameRevy/flesh2leather-fabric"
   },
 
-  "license": "MIT",
+  "license": "MIT License",
   "icon": "assets/flesh2leather/flesh2leather.png",
 
   "environment": "*",
@@ -27,9 +27,6 @@
   "depends": {
     "fabricloader": ">=0.7.4",
     "fabric": "*",
-    "minecraft": "1.16.x"
-  },
-  "suggests": {
-    "flamingo": "*"
+    "minecraft": "1.17.x"
   }
 }
