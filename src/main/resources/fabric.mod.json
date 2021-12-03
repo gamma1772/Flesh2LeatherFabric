@@ -6,12 +6,12 @@
   "name": "Flesh2Leather",
   "description": "This mod adds a convenient way to turn your excessive amounts of useless flesh into leather!",
   "authors": [
-    "CodenameRevy",
+    "Gamma1772",
     "lechiny (zh_cn translations)"
   ],
   "contact": {
-    "homepage": "https://github.com/CodenameRevy",
-    "sources": "https://github.com/CodenameRevy/flesh2leather-fabric"
+    "homepage": "https://github.com/Gamma1772",
+    "sources": "https://github.com/Gamma1772/Flesh2LeatherFabric"
   },
 
   "license": "MIT License",
@@ -20,13 +20,13 @@
   "environment": "*",
   "entrypoints": {
     "main": [
-      "com.codenamerevy.flesh2leather.Flesh2Leather"
+      "com.gamma1772.flesh2leather.Flesh2Leather"
     ]
   },
 
   "depends": {
-    "fabricloader": ">=0.7.4",
+    "fabricloader": ">=0.12.8",
     "fabric": "*",
-    "minecraft": "1.17.x"
+    "minecraft": "1.18.x"
   }
 }

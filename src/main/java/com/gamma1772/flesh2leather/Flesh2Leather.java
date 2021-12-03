@@ -22,7 +22,7 @@
  * SOFTWARE.
  */
 
-package com.codenamerevy.flesh2leather;
+package com.gamma1772.flesh2leather;
 
 import net.fabricmc.api.ModInitializer;
 import net.minecraft.item.Item;
