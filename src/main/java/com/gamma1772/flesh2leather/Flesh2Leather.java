@@ -29,14 +29,11 @@ import net.minecraft.item.Item;
 import net.minecraft.item.ItemGroup;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.registry.Registry;
-import org.apache.logging.log4j.LogManager;
-import org.apache.logging.log4j.Logger;
 
 public class Flesh2Leather implements ModInitializer
 {
 
     public static final String MODID = "flesh2leather";
-    public static final Logger LOGGER = LogManager.getLogger(MODID);
 
     public static Flesh2Leather INSTANCE;
     public static final Item COMBINED_FLESH = new Item(new Item.Settings().group(ItemGroup.MATERIALS));
@@ -46,6 +43,5 @@ public class Flesh2Leather implements ModInitializer
     {
         INSTANCE = this;
         Registry.register(Registry.ITEM, new Identifier(MODID, "combined_flesh"), COMBINED_FLESH);
-        LOGGER.info("Flesh 2 Leather setup complete!");
     }
 }
