@@ -25,23 +25,27 @@
 package com.gamma1772.flesh2leather;
 
 import net.fabricmc.api.ModInitializer;
+import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
+import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.minecraft.item.Item;
-import net.minecraft.item.ItemGroup;
+import net.minecraft.item.ItemGroups;
+import net.minecraft.registry.Registries;
+import net.minecraft.registry.Registry;
 import net.minecraft.util.Identifier;
-import net.minecraft.util.registry.Registry;
 
 public class Flesh2Leather implements ModInitializer
 {
 
     public static final String MODID = "flesh2leather";
-
-    public static Flesh2Leather INSTANCE;
-    public static final Item COMBINED_FLESH = new Item(new Item.Settings().group(ItemGroup.MATERIALS));
+    public static final Item COMBINED_FLESH = new Item(new FabricItemSettings());
 
     @Override
     public void onInitialize()
     {
-        INSTANCE = this;
-        Registry.register(Registry.ITEM, new Identifier(MODID, "combined_flesh"), COMBINED_FLESH);
+        Registry.register(Registries.ITEM, new Identifier(MODID, "combined_flesh"), COMBINED_FLESH);
+
+        ItemGroupEvents.modifyEntriesEvent(ItemGroups.INGREDIENTS).register(content -> {
+            content.add(COMBINED_FLESH);
+        });
     }
 }
